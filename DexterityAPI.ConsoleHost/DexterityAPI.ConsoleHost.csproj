@@ -49,6 +49,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DexterityAPI.Data\DexterityAPI.Data.csproj">
+      <Project>{5db35446-dd7f-4b08-be26-4bb0333f8d37}</Project>
+      <Name>DexterityAPI.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DexterityAPI.Domain\DexterityAPI.Domain.csproj">
+      <Project>{98090951-f3c9-4b96-9757-55ae6816a504}</Project>
+      <Name>DexterityAPI.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
