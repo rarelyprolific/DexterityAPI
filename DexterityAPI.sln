@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DexterityAPI.Domain", "DexterityAPI.Domain\DexterityAPI.Domain.csproj", "{98090951-F3C9-4B96-9757-55AE6816A504}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DexterityAPI.Data", "DexterityAPI.Data\DexterityAPI.Data.csproj", "{5DB35446-DD7F-4B08-BE26-4BB0333F8D37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DexterityAPI.ConsoleHost", "DexterityAPI.ConsoleHost\DexterityAPI.ConsoleHost.csproj", "{F155CA7E-F336-49CC-940A-786BACAEFD1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{98090951-F3C9-4B96-9757-55AE6816A504}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98090951-F3C9-4B96-9757-55AE6816A504}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98090951-F3C9-4B96-9757-55AE6816A504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB35446-DD7F-4B08-BE26-4BB0333F8D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB35446-DD7F-4B08-BE26-4BB0333F8D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB35446-DD7F-4B08-BE26-4BB0333F8D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB35446-DD7F-4B08-BE26-4BB0333F8D37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F155CA7E-F336-49CC-940A-786BACAEFD1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F155CA7E-F336-49CC-940A-786BACAEFD1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F155CA7E-F336-49CC-940A-786BACAEFD1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F155CA7E-F336-49CC-940A-786BACAEFD1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
