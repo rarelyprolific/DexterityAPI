@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DexterityAPI.Data", "Dexter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DexterityAPI.ConsoleHost", "DexterityAPI.ConsoleHost\DexterityAPI.ConsoleHost.csproj", "{F155CA7E-F336-49CC-940A-786BACAEFD1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DexterityAPI.Data.UnitTests", "DexterityAPI.Data.UnitTests\DexterityAPI.Data.UnitTests.csproj", "{6E2956EC-B471-4764-B1A9-30F415BFCBD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F155CA7E-F336-49CC-940A-786BACAEFD1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F155CA7E-F336-49CC-940A-786BACAEFD1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F155CA7E-F336-49CC-940A-786BACAEFD1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E2956EC-B471-4764-B1A9-30F415BFCBD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2956EC-B471-4764-B1A9-30F415BFCBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2956EC-B471-4764-B1A9-30F415BFCBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2956EC-B471-4764-B1A9-30F415BFCBD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
