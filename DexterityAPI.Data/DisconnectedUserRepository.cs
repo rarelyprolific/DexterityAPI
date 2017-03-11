@@ -30,22 +30,37 @@ namespace DexterityAPI.Data
             return newUser;
         }
 
-        public int EditUser(User userToEdit)
+        public User EditUser(User userToEdit)
         {
             _context.Users.Update(userToEdit);
-            return _context.SaveChanges();
+            _context.SaveChanges();
+
+            return userToEdit;
         }
 
-        public int ChangeUserStatus(int userId, bool isEnabled)
+        public User EnableUser(int userId)
         {
-            User user = _context.Users.Where(u => u.Id == userId).SingleOrDefault();
-            user.IsEnabled = isEnabled;
-            _context.Users.Update(user);
-            return _context.SaveChanges();
+            User userToEnable = _context.Users.Where(u => u.Id == userId).SingleOrDefault();
+            userToEnable.IsEnabled = true;
+            _context.Users.Update(userToEnable);
+            _context.SaveChanges();
+
+            return userToEnable;
         }
 
-        public int DeleteUser(User userToDelete)
+        public User DisableUser(int userId)
         {
+            User userToDisable = _context.Users.Where(u => u.Id == userId).SingleOrDefault();
+            userToDisable.IsEnabled = false;
+            _context.Users.Update(userToDisable);
+            _context.SaveChanges();
+
+            return userToDisable;
+        }
+
+        public int DeleteUser(int userId)
+        {
+            User userToDelete = _context.Users.Where(u => u.Id == userId).SingleOrDefault();
             _context.Users.Remove(userToDelete);
             return _context.SaveChanges();
         }

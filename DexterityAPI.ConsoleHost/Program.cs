@@ -47,10 +47,10 @@ namespace DexterityAPI.ConsoleHost
                     EditUser();
                     break;
                 case ConsoleKey.D4:
-                    ChangeUserStatus(true);
+                    EnableUser();
                     break;
                 case ConsoleKey.D5:
-                    ChangeUserStatus(false);
+                    DisableUser();
                     break;
                 case ConsoleKey.D6:
                     DeleteUser();
@@ -137,19 +137,35 @@ namespace DexterityAPI.ConsoleHost
             }
         }
 
-        static private void ChangeUserStatus(bool isEnabled)
+        static private void EnableUser()
         {
             IUserRepository userRepository = GetUserRepository();
 
             GetUsers();
-
             int userId = PromptForUserId();
-
             if (userId == 0) return;
 
             try
             {
-                userRepository.ChangeUserStatus(userId, isEnabled);
+                userRepository.EnableUser(userId);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        static private void DisableUser()
+        {
+            IUserRepository userRepository = GetUserRepository();
+
+            GetUsers();
+            int userId = PromptForUserId();
+            if (userId == 0) return;
+
+            try
+            {
+                userRepository.DisableUser(userId);
             }
             catch (Exception ex)
             {
@@ -162,15 +178,12 @@ namespace DexterityAPI.ConsoleHost
             IUserRepository userRepository = GetUserRepository();
 
             GetUsers();
-
             int userId = PromptForUserId();
-
             if (userId == 0) return;
-            var userToDelete = new User { Id = userId };
 
             try
             {
-                userRepository.DeleteUser(userToDelete);
+                userRepository.DeleteUser(userId);
             }
             catch (Exception ex)
             {

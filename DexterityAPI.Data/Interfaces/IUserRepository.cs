@@ -8,8 +8,9 @@ namespace DexterityAPI.Data.Interfaces
     {
         IEnumerable<User> GetUsers();
         User AddUser(User newUser);
-        int EditUser(User userToEdit);
-        int ChangeUserStatus(int userId, bool isEnabled);
-        int DeleteUser(User userToDelete);
+        User EditUser(User userToEdit);
+        User EnableUser(int userId);
+        User DisableUser(int userId);
+        int DeleteUser(int userId);
     }
 }
