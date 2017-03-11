@@ -8,6 +8,7 @@ namespace DexterityAPI.Data.UnitTests
     using Domain;
     using Interfaces;
 
+    // This class is intended to hold unit tests for the DisconnectedUserRepository using the Entity Framework Core InMemory provider.
     [TestClass]
     public class DisconnectedUserRepositoryTests
     {
